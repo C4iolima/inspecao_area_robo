@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name="my_robot">
+      <!-- Import robot -->
+  <xacro:include filename="$(find gazebo_plugins)/test/multi_robot_scenario/xacro/p3dx/pioneer3dx_body.xacro"/>
+  <xacro:pioneer3dx_body name="chassis" parent="base_link" meshes="package://gazebo_plugins/test/multi_robot_scenario/meshes/p3dx"/>
+
+  <!-- Laser  -->
+  <xacro:include filename="$(find gazebo_plugins)/test/multi_robot_scenario/xacro/laser/hokuyo.xacro"/>
+  <xacro:laser name="front_laser" parent="chassis" xyz="0.16 0 0.1" rpy="0 0 0" meshes="package://gazebo_plugins/test/multi_robot_scenario/meshes/laser"/>
+
+
+   </model>
+</sdf>
+

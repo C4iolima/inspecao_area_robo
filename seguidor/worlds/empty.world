@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://aulagazebo_planta</uri>
+    </include>
+
+    <include>
+      <uri>model://my_ground_plane_milena</uri>
+    </include>
+
+  </world>
+</sdf>

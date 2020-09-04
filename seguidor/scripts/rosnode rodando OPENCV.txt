@@ -1,0 +1,30 @@
+ros@ubuntu:~/catkin_ws/src/aulagazebo-master/scripts$ rosnode info /image_converter_2900_1587520711571
+--------------------------------------------------------------------------------
+Node [/image_converter_2900_1587520711571]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+ * /p3dx/front_camera/image_raw [sensor_msgs/Image]
+
+Services: 
+ * /image_converter_2900_1587520711571/get_loggers
+ * /image_converter_2900_1587520711571/set_logger_level
+
+
+contacting node http://ubuntu:46107/ ...
+Pid: 2900
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (40553 - 127.0.0.1:37510) [16]
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo (http://ubuntu:40961/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /p3dx/front_camera/image_raw
+    * to: /gazebo (http://ubuntu:40961/)
+    * direction: inbound
+    * transport: TCPROS
